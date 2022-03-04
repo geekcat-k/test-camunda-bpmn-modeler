@@ -35108,3 +35108,73 @@ div.ant-typography-edit-content.ant-typography-rtl {
   border-bottom-style: solid;
   border-bottom-color: rgb(224, 224, 224);
 }
+
+.css-1qf0uii {
+background-image: initial;
+background-position-x: initial;
+background-position-y: initial;
+background-size: initial;
+background-repeat-x: initial;
+background-repeat-y: initial;
+background-attachment: initial;
+background-origin: initial;
+background-clip: initial;
+background-color: rgb(255, 255, 255);
+display: flex;
+flex-direction: row;
+-webkit-box-align: center;
+align-items: center;
+-webkit-box-pack: justify;
+justify-content: space-between;
+padding-top: 0px;
+padding-right: 24px;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color: rgb(224, 224, 224);
+};
+
+.css-15voufr {
+  transition-duration: 0.3s;
+  transition-timing-function: initial;
+  transition-delay: initial;
+  transition-property: background-color;
+  white-space: nowrap;
+  cursor: pointer;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  background-color: rgb(240, 240, 240);
+  border-top-color: rgb(224, 224, 224);
+  border-top-left-radius: 21px;
+  border-top-right-radius: 21px;
+  border-bottom-right-radius: 21px;
+  border-bottom-left-radius: 21px;
+  padding-top: 0.35em;
+  padding-right: 0.8em;
+  line-height: 1;
+  color: rgb(50, 50, 50);
+  max-width: 100%;
+}
+
+.css-1gmnpk6 {
+  grid-column-start: 2;
+  grid-column-end: auto;
+  grid-row-start: 1;
+  grid-row-end: auto;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+
+.css-11f5g5w {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  };
+
+  .css-1qf0uii button, .css-1qf0uii .fave-unfave-icon {
+    margin-left: 8px;
+    }

@@ -15,11 +15,22 @@ import EditMenuBar from "./EditMenuBar";
 class BpmnEditor extends Component {
   modeler = null;
 
-  // implement a method to fire the HTTP request from the backend
+  setEncoded = (link, name, data) => {
+    var encodedData = encodeURIComponent(data);
+
+    console.log(encodedData);
+
+    if (data) {
+      link.href = "data:application/bpmn20-xml;charset=UTF-8," + encodedData;
+      link.setAttribute("download", name);
+    }
+  };
 
   saveModelHandler = (event) => {
     event.preventDefault();
-
+    //console.log(this.modeler.encodedData);
+    //const data = this.modeler.saveXML();
+    this.setEncoded(event.target, "diagram.svg", emptyBpmn);
     // post request to save the model
     // implement a method to run the request from the backend for POST Model - Interpretation Engine
   };
@@ -62,23 +73,28 @@ class BpmnEditor extends Component {
     return (
       <>
         <EditMenuBar></EditMenuBar>
-        <div id="bpmncontainer">
-          <div
-            id="propview"
-            style={{
-              width: "25%",
-              height: "98vh",
-              float: "right",
-              maxHeight: "98vh",
-              overflowX: "auto"
-            }}
-          ></div>
-          <div
-            id="bpmnview"
-            style={{ width: "75%", height: "98vh", float: "left" }}
-          ></div>
+        <div
+          id="TABS-osnld2Uuaf"
+          className="ant-tabs ant-tabs-top ant-tabs-editable ant-tabs-card ant-tabs-editable-card css-14r76du"
+        >
+          <div id="bpmncontainer">
+            <div
+              id="propview"
+              style={{
+                width: "25%",
+                height: "98vh",
+                float: "right",
+                maxHeight: "98vh",
+                overflowX: "auto",
+                backgroundColor: "white"
+              }}
+            ></div>
+            <div
+              id="bpmnview"
+              style={{ width: "75%", height: "98vh", float: "left" }}
+            ></div>
+          </div>
         </div>
-
         <Button
           onClick={this.saveModelHandler}
           variant="primary"

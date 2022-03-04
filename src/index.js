@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 
 import "./styles.css";
 import "./dashbordContainer.css";
+import "./font-awsome-min.css";
 
 import App from "./App";
 
